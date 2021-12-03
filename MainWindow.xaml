@@ -1,0 +1,19 @@
+﻿<Window x:Name="wndMain" x:Class="EpilogDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EpilogDB"
+        mc:Ignorable="d"
+        Title="Epilog DB Cleaner" Height="245" Width="440" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" SizeToContent="Height">
+    <Grid x:Name="gridMain" Margin="0, 0, 0, 15">
+        <Label x:Name="lblInfo" Content="This utility clears and compacts an Epilog Laser Job &#xD;&#xA;Database. Select the database file and click 'Clean'!" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Height="45" Width="362" FontSize="14"/>
+        <Button x:Name="cmdGetDbFile" Content="..." HorizontalAlignment="Left" Height="25" Margin="364,70,0,0" VerticalAlignment="Top" Width="36" FontSize="16" FontWeight="Bold" Click="cmdGetDbFile_Click"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="27" Margin="38,70,0,0" VerticalAlignment="Top" Width="319">
+            <Label x:Name="lblDbFileName" Content="Select Database" HorizontalAlignment="Center" Height="24" Margin="0,-1,0,0" VerticalAlignment="Top" Width="319"/>
+        </Border>
+        <Button x:Name="cmdClean" Content="Clean" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Height="38" Width="92" FontSize="16" FontWeight="Bold" Click="cmdClean_Click"/>
+        <Label x:Name="lblOldFileSize" Content="Pre-Cleaned File Size: 0 kB" HorizontalAlignment="Left" Height="24" Margin="38,167,0,0" VerticalAlignment="Top" Width="278" FontStyle="Italic"/>
+        <Label x:Name="lblNewFileSize" Content="Cleaned File Size: 0 kB" HorizontalAlignment="Left" Height="24" Margin="38,187,0,0" VerticalAlignment="Top" Width="278" FontStyle="Italic"/>
+    </Grid>
+</Window>
